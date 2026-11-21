@@ -182,10 +182,10 @@ def main():
         raise ValueError(f"Неизвестная страница {PAGE!r}. Выберите название из PAGES.")
     raw_dir = ROOT / "data/raw"
     clean_dir = ROOT / "data/clean"
-    output_dir = ROOT / "knowledge_base"
+    output_dir = ROOT / "Task2" / "knowledge_base"
     for folder in [raw_dir, clean_dir, output_dir]:
         folder.mkdir(parents=True, exist_ok=True)
-    terms = json.loads((ROOT / "terms_map.json").read_text(encoding="utf-8"))
+    terms = json.loads((ROOT / "Task2" / "terms_map.json").read_text(encoding="utf-8"))
 
     site_file = ROOT / "data/siteinfo.json"
     if not site_file.exists():
