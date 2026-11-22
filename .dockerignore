@@ -1,0 +1,13 @@
+*
+!Dockerfile
+!requirements.txt
+!Task2/
+!Task2/knowledge_base/
+!Task2/knowledge_base/*.md
+!Task3/
+!Task3/qdrant_data/
+!Task3/qdrant_data/**
+Task3/qdrant_data/.lock
+!Task5/
+!Task5/bot.py
+!Task5/filters.py
